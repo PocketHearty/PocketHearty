@@ -16,6 +16,7 @@
 		2A3B4A5317CB7D2A00FBCB8E /* PHCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B4A5217CB7D2A00FBCB8E /* PHCommunicator.m */; };
 		2A3B4A5917CB7DAA00FBCB8E /* PHGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B4A5817CB7DAA00FBCB8E /* PHGraphView.m */; };
 		2A3B4A5D17CB805600FBCB8E /* PHLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B4A5C17CB805600FBCB8E /* PHLogger.m */; };
+		2A3B4A6117CB8C2900FBCB8E /* PHCardioRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B4A6017CB8C2900FBCB8E /* PHCardioRecord.m */; };
 		2AE6E1E717CB654900AC21BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE6E1E617CB654900AC21BB /* Foundation.framework */; };
 		2AE6E1E917CB654900AC21BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE6E1E817CB654900AC21BB /* CoreGraphics.framework */; };
 		2AE6E1EB17CB654900AC21BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE6E1EA17CB654900AC21BB /* UIKit.framework */; };
@@ -62,6 +63,8 @@
 		2A3B4A5A17CB7DDC00FBCB8E /* IMPORTANT NOTICES */ = {isa = PBXFileReference; lastKnownFileType = text; path = "IMPORTANT NOTICES"; sourceTree = "<group>"; };
 		2A3B4A5B17CB805600FBCB8E /* PHLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHLogger.h; path = Services/PHLogger.h; sourceTree = "<group>"; };
 		2A3B4A5C17CB805600FBCB8E /* PHLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHLogger.m; path = Services/PHLogger.m; sourceTree = "<group>"; };
+		2A3B4A5F17CB8C2900FBCB8E /* PHCardioRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHCardioRecord.h; path = "Data Structures/PHCardioRecord.h"; sourceTree = "<group>"; };
+		2A3B4A6017CB8C2900FBCB8E /* PHCardioRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHCardioRecord.m; path = "Data Structures/PHCardioRecord.m"; sourceTree = "<group>"; };
 		2AE6E1E317CB654900AC21BB /* PocketHearty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketHearty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE6E1E617CB654900AC21BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2AE6E1E817CB654900AC21BB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -138,6 +141,15 @@
 			name = "View Controllers & Views";
 			sourceTree = "<group>";
 		};
+		2A3B4A5E17CB8BD500FBCB8E /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				2A3B4A5F17CB8C2900FBCB8E /* PHCardioRecord.h */,
+				2A3B4A6017CB8C2900FBCB8E /* PHCardioRecord.m */,
+			);
+			name = "Data Structures";
+			sourceTree = "<group>";
+		};
 		2AE6E1DA17CB654900AC21BB = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +190,7 @@
 				2A333C6417CB6F3A0083B3E9 /* Storyboard.storyboard */,
 				2A3B4A5617CB7D9300FBCB8E /* View Controllers & Views */,
 				2A3B4A4A17CB7CC200FBCB8E /* Services */,
+				2A3B4A5E17CB8BD500FBCB8E /* Data Structures */,
 				2AE6E1FA17CB654900AC21BB /* PocketHearty.xcdatamodeld */,
 				2AE6E1FD17CB654900AC21BB /* Images.xcassets */,
 				2AE6E1EF17CB654900AC21BB /* Supporting Files */,
@@ -311,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A3B4A6117CB8C2900FBCB8E /* PHCardioRecord.m in Sources */,
 				2A333C6717CB70360083B3E9 /* PHCardioViewController.m in Sources */,
 				2A333C6A17CB704A0083B3E9 /* PHHistoryViewController.m in Sources */,
 				2AE6E1F917CB654900AC21BB /* PHAppDelegate.m in Sources */,

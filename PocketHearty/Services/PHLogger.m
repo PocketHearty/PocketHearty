@@ -10,4 +10,6 @@
 
 @implementation PHLogger
 
+@synthesize record = mRecord;
+
 @end

@@ -1,5 +1,5 @@
 //
-//  PHLogger.h
+//  PHCardioRecord.h
 //  PocketHearty
 //
 //  Created by 冯 子力 on 13-8-26.
@@ -8,13 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import "PHCardioRecord.h"
-
-@interface PHLogger : NSObject
-{
-    PHCardioRecord *mRecord;
-}
-
-@property (retain, nonatomic) PHCardioRecord *record;
+@interface PHCardioRecord : NSObject
 
 @end
