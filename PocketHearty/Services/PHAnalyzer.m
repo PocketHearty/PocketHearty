@@ -10,4 +10,9 @@
 
 @implementation PHAnalyzer
 
+- (void)startMonitoringIncomingCardioSignal
+{
+    
+}
+
 @end

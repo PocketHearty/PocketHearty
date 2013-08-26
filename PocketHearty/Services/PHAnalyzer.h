@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol PHAnalyzerDelegate <NSObject>
+
+- (void)didRecognizedIncomingCardioSignal;
+
+@end
+
 @interface PHAnalyzer : NSObject
+{
+    
+}
+
+- (void)startMonitoringIncomingCardioSignal;
 
 @end
