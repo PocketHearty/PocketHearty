@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PHGraphViewController : UIViewController
+@interface PHGraphView : UIView
 
 @end

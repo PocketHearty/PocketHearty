@@ -14,7 +14,7 @@
 		2A3B4A4917CB7B5C00FBCB8E /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A333C6417CB6F3A0083B3E9 /* Storyboard.storyboard */; };
 		2A3B4A4D17CB7D0300FBCB8E /* PHAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B4A4C17CB7D0300FBCB8E /* PHAnalyzer.m */; };
 		2A3B4A5317CB7D2A00FBCB8E /* PHCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B4A5217CB7D2A00FBCB8E /* PHCommunicator.m */; };
-		2A3B4A5917CB7DAA00FBCB8E /* PHGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B4A5817CB7DAA00FBCB8E /* PHGraphViewController.m */; };
+		2A3B4A5917CB7DAA00FBCB8E /* PHGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B4A5817CB7DAA00FBCB8E /* PHGraphView.m */; };
 		2A3B4A5D17CB805600FBCB8E /* PHLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B4A5C17CB805600FBCB8E /* PHLogger.m */; };
 		2AE6E1E717CB654900AC21BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE6E1E617CB654900AC21BB /* Foundation.framework */; };
 		2AE6E1E917CB654900AC21BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE6E1E817CB654900AC21BB /* CoreGraphics.framework */; };
@@ -57,8 +57,8 @@
 		2A3B4A4C17CB7D0300FBCB8E /* PHAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHAnalyzer.m; path = Services/PHAnalyzer.m; sourceTree = "<group>"; };
 		2A3B4A5117CB7D2A00FBCB8E /* PHCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHCommunicator.h; path = Services/PHCommunicator.h; sourceTree = "<group>"; };
 		2A3B4A5217CB7D2A00FBCB8E /* PHCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHCommunicator.m; path = Services/PHCommunicator.m; sourceTree = "<group>"; };
-		2A3B4A5717CB7DAA00FBCB8E /* PHGraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHGraphViewController.h; path = "View Controllers/PHGraphViewController.h"; sourceTree = "<group>"; };
-		2A3B4A5817CB7DAA00FBCB8E /* PHGraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHGraphViewController.m; path = "View Controllers/PHGraphViewController.m"; sourceTree = "<group>"; };
+		2A3B4A5717CB7DAA00FBCB8E /* PHGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHGraphView.h; path = "View Controllers/PHGraphView.h"; sourceTree = "<group>"; };
+		2A3B4A5817CB7DAA00FBCB8E /* PHGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHGraphView.m; path = "View Controllers/PHGraphView.m"; sourceTree = "<group>"; };
 		2A3B4A5A17CB7DDC00FBCB8E /* IMPORTANT NOTICES */ = {isa = PBXFileReference; lastKnownFileType = text; path = "IMPORTANT NOTICES"; sourceTree = "<group>"; };
 		2A3B4A5B17CB805600FBCB8E /* PHLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHLogger.h; path = Services/PHLogger.h; sourceTree = "<group>"; };
 		2A3B4A5C17CB805600FBCB8E /* PHLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHLogger.m; path = Services/PHLogger.m; sourceTree = "<group>"; };
@@ -121,13 +121,21 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
-		2A3B4A5617CB7D9300FBCB8E /* View Controllers */ = {
+		2A3B4A5617CB7D9300FBCB8E /* View Controllers & Views */ = {
 			isa = PBXGroup;
 			children = (
-				2A3B4A5717CB7DAA00FBCB8E /* PHGraphViewController.h */,
-				2A3B4A5817CB7DAA00FBCB8E /* PHGraphViewController.m */,
+				2A333C6517CB70360083B3E9 /* PHCardioViewController.h */,
+				2A333C6617CB70360083B3E9 /* PHCardioViewController.m */,
+				2A333C6817CB704A0083B3E9 /* PHHistoryViewController.h */,
+				2A333C6917CB704A0083B3E9 /* PHHistoryViewController.m */,
+				2A333C6B17CB705D0083B3E9 /* PHStatisticsViewController.h */,
+				2A333C6C17CB705D0083B3E9 /* PHStatisticsViewController.m */,
+				2A333C6E17CB706C0083B3E9 /* PHProfileViewController.h */,
+				2A333C6F17CB706C0083B3E9 /* PHProfileViewController.m */,
+				2A3B4A5717CB7DAA00FBCB8E /* PHGraphView.h */,
+				2A3B4A5817CB7DAA00FBCB8E /* PHGraphView.m */,
 			);
-			name = "View Controllers";
+			name = "View Controllers & Views";
 			sourceTree = "<group>";
 		};
 		2AE6E1DA17CB654900AC21BB = {
@@ -168,15 +176,7 @@
 				2AE6E1F717CB654900AC21BB /* PHAppDelegate.h */,
 				2AE6E1F817CB654900AC21BB /* PHAppDelegate.m */,
 				2A333C6417CB6F3A0083B3E9 /* Storyboard.storyboard */,
-				2A333C6517CB70360083B3E9 /* PHCardioViewController.h */,
-				2A333C6617CB70360083B3E9 /* PHCardioViewController.m */,
-				2A333C6817CB704A0083B3E9 /* PHHistoryViewController.h */,
-				2A333C6917CB704A0083B3E9 /* PHHistoryViewController.m */,
-				2A333C6B17CB705D0083B3E9 /* PHStatisticsViewController.h */,
-				2A333C6C17CB705D0083B3E9 /* PHStatisticsViewController.m */,
-				2A333C6E17CB706C0083B3E9 /* PHProfileViewController.h */,
-				2A333C6F17CB706C0083B3E9 /* PHProfileViewController.m */,
-				2A3B4A5617CB7D9300FBCB8E /* View Controllers */,
+				2A3B4A5617CB7D9300FBCB8E /* View Controllers & Views */,
 				2A3B4A4A17CB7CC200FBCB8E /* Services */,
 				2AE6E1FA17CB654900AC21BB /* PocketHearty.xcdatamodeld */,
 				2AE6E1FD17CB654900AC21BB /* Images.xcassets */,
@@ -314,7 +314,7 @@
 				2A333C6717CB70360083B3E9 /* PHCardioViewController.m in Sources */,
 				2A333C6A17CB704A0083B3E9 /* PHHistoryViewController.m in Sources */,
 				2AE6E1F917CB654900AC21BB /* PHAppDelegate.m in Sources */,
-				2A3B4A5917CB7DAA00FBCB8E /* PHGraphViewController.m in Sources */,
+				2A3B4A5917CB7DAA00FBCB8E /* PHGraphView.m in Sources */,
 				2A333C6D17CB705D0083B3E9 /* PHStatisticsViewController.m in Sources */,
 				2A3B4A5317CB7D2A00FBCB8E /* PHCommunicator.m in Sources */,
 				2AE6E1FC17CB654900AC21BB /* PocketHearty.xcdatamodeld in Sources */,
