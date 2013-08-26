@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A333C6717CB70360083B3E9 /* PHCardioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A333C6617CB70360083B3E9 /* PHCardioViewController.m */; };
+		2A333C6A17CB704A0083B3E9 /* PHHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A333C6917CB704A0083B3E9 /* PHHistoryViewController.m */; };
+		2A333C6D17CB705D0083B3E9 /* PHStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A333C6C17CB705D0083B3E9 /* PHStatisticsViewController.m */; };
+		2A333C7017CB706C0083B3E9 /* PHProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A333C6F17CB706C0083B3E9 /* PHProfileViewController.m */; };
 		2AE6E1E717CB654900AC21BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE6E1E617CB654900AC21BB /* Foundation.framework */; };
 		2AE6E1E917CB654900AC21BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE6E1E817CB654900AC21BB /* CoreGraphics.framework */; };
 		2AE6E1EB17CB654900AC21BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE6E1EA17CB654900AC21BB /* UIKit.framework */; };
@@ -35,6 +39,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A333C6417CB6F3A0083B3E9 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		2A333C6517CB70360083B3E9 /* PHCardioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHCardioViewController.h; path = "View Controllers/PHCardioViewController.h"; sourceTree = "<group>"; };
+		2A333C6617CB70360083B3E9 /* PHCardioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHCardioViewController.m; path = "View Controllers/PHCardioViewController.m"; sourceTree = "<group>"; };
+		2A333C6817CB704A0083B3E9 /* PHHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHHistoryViewController.h; path = "View Controllers/PHHistoryViewController.h"; sourceTree = "<group>"; };
+		2A333C6917CB704A0083B3E9 /* PHHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHHistoryViewController.m; path = "View Controllers/PHHistoryViewController.m"; sourceTree = "<group>"; };
+		2A333C6B17CB705D0083B3E9 /* PHStatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHStatisticsViewController.h; path = "View Controllers/PHStatisticsViewController.h"; sourceTree = "<group>"; };
+		2A333C6C17CB705D0083B3E9 /* PHStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHStatisticsViewController.m; path = "View Controllers/PHStatisticsViewController.m"; sourceTree = "<group>"; };
+		2A333C6E17CB706C0083B3E9 /* PHProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHProfileViewController.h; path = "View Controllers/PHProfileViewController.h"; sourceTree = "<group>"; };
+		2A333C6F17CB706C0083B3E9 /* PHProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHProfileViewController.m; path = "View Controllers/PHProfileViewController.m"; sourceTree = "<group>"; };
 		2AE6E1E317CB654900AC21BB /* PocketHearty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketHearty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE6E1E617CB654900AC21BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2AE6E1E817CB654900AC21BB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +130,15 @@
 			children = (
 				2AE6E1F717CB654900AC21BB /* PHAppDelegate.h */,
 				2AE6E1F817CB654900AC21BB /* PHAppDelegate.m */,
+				2A333C6417CB6F3A0083B3E9 /* Storyboard.storyboard */,
+				2A333C6517CB70360083B3E9 /* PHCardioViewController.h */,
+				2A333C6617CB70360083B3E9 /* PHCardioViewController.m */,
+				2A333C6817CB704A0083B3E9 /* PHHistoryViewController.h */,
+				2A333C6917CB704A0083B3E9 /* PHHistoryViewController.m */,
+				2A333C6B17CB705D0083B3E9 /* PHStatisticsViewController.h */,
+				2A333C6C17CB705D0083B3E9 /* PHStatisticsViewController.m */,
+				2A333C6E17CB706C0083B3E9 /* PHProfileViewController.h */,
+				2A333C6F17CB706C0083B3E9 /* PHProfileViewController.m */,
 				2AE6E1FD17CB654900AC21BB /* Images.xcassets */,
 				2AE6E1FA17CB654900AC21BB /* PocketHearty.xcdatamodeld */,
 				2AE6E1EF17CB654900AC21BB /* Supporting Files */,
@@ -249,9 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A333C6717CB70360083B3E9 /* PHCardioViewController.m in Sources */,
+				2A333C6A17CB704A0083B3E9 /* PHHistoryViewController.m in Sources */,
 				2AE6E1F917CB654900AC21BB /* PHAppDelegate.m in Sources */,
+				2A333C6D17CB705D0083B3E9 /* PHStatisticsViewController.m in Sources */,
 				2AE6E1FC17CB654900AC21BB /* PocketHearty.xcdatamodeld in Sources */,
 				2AE6E1F517CB654900AC21BB /* main.m in Sources */,
+				2A333C7017CB706C0083B3E9 /* PHProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +472,7 @@
 				2AE6E21717CB654A00AC21BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2AE6E21817CB654A00AC21BB /* Build configuration list for PBXNativeTarget "PocketHeartyTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +481,7 @@
 				2AE6E21A17CB654A00AC21BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
