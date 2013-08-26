@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PHHistoryViewController : UIViewController
+@interface PHHistoryViewController : UINavigationController
 
 @end

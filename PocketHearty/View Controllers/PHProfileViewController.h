@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PHProfileViewController : UIViewController
+@interface PHProfileViewController : UINavigationController
 
 @end

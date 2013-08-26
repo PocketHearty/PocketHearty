@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PHStatisticsViewController : UIViewController
+@interface PHStatisticsViewController : UINavigationController
 
 @end

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PHCardioViewController : UIViewController
+@interface PHCardioViewController : UINavigationController
 
 @end
