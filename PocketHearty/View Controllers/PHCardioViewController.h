@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PHCardioViewController : UINavigationController
+#import "PHAnalyzer.h"
+
+@interface PHCardioViewController : UINavigationController <PHAnalyzerDelegate>
 
 @end
