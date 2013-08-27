@@ -278,7 +278,6 @@
         <!--Navigation Controller-->
         <scene sceneID="aw3-2p-WLN">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CPb-ZW-xv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" id="IgC-Ch-gD9" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nfu-cg-44E">
                         <autoresizingMask key="autoresizingMask"/>
@@ -287,8 +286,9 @@
                         <segue destination="KGa-Io-VtC" kind="relationship" relationship="rootViewController" id="0D2-2t-5fJ"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CPb-ZW-xv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2413" y="-241"/>
+            <point key="canvasLocation" x="2577" y="-241"/>
         </scene>
         <!--View Controller - share-->
         <scene sceneID="U1A-Uf-7bf">
