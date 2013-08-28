@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+#import "PHCommunicator.h"
+#import "PHLogger.h"
+
 @protocol PHAnalyzerDelegate <NSObject>
 
 - (void)didRecognizedIncomingCardioSignal;
