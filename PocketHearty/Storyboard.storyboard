@@ -319,10 +319,10 @@
             </objects>
             <point key="canvasLocation" x="831" y="1204"/>
         </scene>
-        <!--View Controller - 个人信息-->
+        <!--Profile Input View Controller - 个人信息-->
         <scene sceneID="CQF-2r-lbO">
             <objects>
-                <viewController id="Pz0-tH-HVz" sceneMemberID="viewController">
+                <viewController id="Pz0-tH-HVz" customClass="PHProfileInputViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AZF-zP-LzQ"/>
                         <viewControllerLayoutGuide type="bottom" id="ct9-vD-S1j"/>
@@ -331,24 +331,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONz-CT-NNn">
+                                <rect key="frame" x="0.0" y="67" width="320" height="449"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapBackgroundArea:" destination="Pz0-tH-HVz" eventType="touchDown" id="4Ct-5a-JOM"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JI0-Fp-Ah8">
                                 <rect key="frame" x="117" y="200" width="154" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jiv-qk-qdT">
                                 <rect key="frame" x="117" y="261" width="154" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Otn-PN-J4L">
-                                <rect key="frame" x="117" y="322" width="154" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="姓名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6L-c7-a6p">
                                 <rect key="frame" x="64" y="209" width="34" height="21"/>
@@ -369,12 +374,31 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Pra-Ga-kmv">
+                                <rect key="frame" x="133" y="324" width="122" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="男"/>
+                                    <segment title="女"/>
+                                </segments>
+                                <connections>
+                                    <action selector="genderControlTapped:" destination="Pz0-tH-HVz" eventType="touchDown" id="Pg3-EL-h6u"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="个人信息" id="HH8-TL-CgA">
                         <barButtonItem key="rightBarButtonItem" title="保存" id="UP2-1z-pzf"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ageField" destination="Jiv-qk-qdT" id="DgY-Gn-IO8"/>
+                        <outlet property="ageLabel" destination="adc-Ha-YM3" id="5Tk-jM-rH8"/>
+                        <outlet property="genderLabel" destination="JGX-mh-DX0" id="fvX-kV-gcQ"/>
+                        <outlet property="genderSegContrl" destination="Pra-Ga-kmv" id="SSd-Mt-XNc"/>
+                        <outlet property="nameField" destination="JI0-Fp-Ah8" id="GTG-Yy-PJr"/>
+                        <outlet property="nameLabel" destination="h6L-c7-a6p" id="HbK-sA-AfG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jY0-nX-SnK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

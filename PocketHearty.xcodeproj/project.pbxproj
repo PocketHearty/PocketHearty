@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A333C6717CB70360083B3E9 /* PHCardioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A333C6617CB70360083B3E9 /* PHCardioViewController.m */; };
-		2A333C6A17CB704A0083B3E9 /* PHHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A333C6917CB704A0083B3E9 /* PHHistoryViewController.m */; };
-		2A333C6D17CB705D0083B3E9 /* PHStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A333C6C17CB705D0083B3E9 /* PHStatisticsViewController.m */; };
-		2A333C7017CB706C0083B3E9 /* PHProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A333C6F17CB706C0083B3E9 /* PHProfileViewController.m */; };
+		2A2CDAB217D39AD800EA2095 /* PHProfileInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2CDAB117D39AD800EA2095 /* PHProfileInputViewController.m */; };
 		2A3B4A4917CB7B5C00FBCB8E /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A333C6417CB6F3A0083B3E9 /* Storyboard.storyboard */; };
 		2A3B4A4D17CB7D0300FBCB8E /* PHAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B4A4C17CB7D0300FBCB8E /* PHAnalyzer.m */; };
 		2A3B4A5317CB7D2A00FBCB8E /* PHCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B4A5217CB7D2A00FBCB8E /* PHCommunicator.m */; };
@@ -45,15 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A2CDAB017D39AD800EA2095 /* PHProfileInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHProfileInputViewController.h; path = "View Controllers/PHProfileInputViewController.h"; sourceTree = "<group>"; };
+		2A2CDAB117D39AD800EA2095 /* PHProfileInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHProfileInputViewController.m; path = "View Controllers/PHProfileInputViewController.m"; sourceTree = "<group>"; };
 		2A333C6417CB6F3A0083B3E9 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		2A333C6517CB70360083B3E9 /* PHCardioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHCardioViewController.h; path = "View Controllers/PHCardioViewController.h"; sourceTree = "<group>"; };
-		2A333C6617CB70360083B3E9 /* PHCardioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHCardioViewController.m; path = "View Controllers/PHCardioViewController.m"; sourceTree = "<group>"; };
-		2A333C6817CB704A0083B3E9 /* PHHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHHistoryViewController.h; path = "View Controllers/PHHistoryViewController.h"; sourceTree = "<group>"; };
-		2A333C6917CB704A0083B3E9 /* PHHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHHistoryViewController.m; path = "View Controllers/PHHistoryViewController.m"; sourceTree = "<group>"; };
-		2A333C6B17CB705D0083B3E9 /* PHStatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHStatisticsViewController.h; path = "View Controllers/PHStatisticsViewController.h"; sourceTree = "<group>"; };
-		2A333C6C17CB705D0083B3E9 /* PHStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHStatisticsViewController.m; path = "View Controllers/PHStatisticsViewController.m"; sourceTree = "<group>"; };
-		2A333C6E17CB706C0083B3E9 /* PHProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHProfileViewController.h; path = "View Controllers/PHProfileViewController.h"; sourceTree = "<group>"; };
-		2A333C6F17CB706C0083B3E9 /* PHProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHProfileViewController.m; path = "View Controllers/PHProfileViewController.m"; sourceTree = "<group>"; };
 		2A3B4A4B17CB7D0300FBCB8E /* PHAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHAnalyzer.h; path = Services/PHAnalyzer.h; sourceTree = "<group>"; };
 		2A3B4A4C17CB7D0300FBCB8E /* PHAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHAnalyzer.m; path = Services/PHAnalyzer.m; sourceTree = "<group>"; };
 		2A3B4A5117CB7D2A00FBCB8E /* PHCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHCommunicator.h; path = Services/PHCommunicator.h; sourceTree = "<group>"; };
@@ -127,16 +118,10 @@
 		2A3B4A5617CB7D9300FBCB8E /* View Controllers & Views */ = {
 			isa = PBXGroup;
 			children = (
-				2A333C6517CB70360083B3E9 /* PHCardioViewController.h */,
-				2A333C6617CB70360083B3E9 /* PHCardioViewController.m */,
-				2A333C6817CB704A0083B3E9 /* PHHistoryViewController.h */,
-				2A333C6917CB704A0083B3E9 /* PHHistoryViewController.m */,
-				2A333C6B17CB705D0083B3E9 /* PHStatisticsViewController.h */,
-				2A333C6C17CB705D0083B3E9 /* PHStatisticsViewController.m */,
-				2A333C6E17CB706C0083B3E9 /* PHProfileViewController.h */,
-				2A333C6F17CB706C0083B3E9 /* PHProfileViewController.m */,
 				2A3B4A5717CB7DAA00FBCB8E /* PHGraphView.h */,
 				2A3B4A5817CB7DAA00FBCB8E /* PHGraphView.m */,
+				2A2CDAB017D39AD800EA2095 /* PHProfileInputViewController.h */,
+				2A2CDAB117D39AD800EA2095 /* PHProfileInputViewController.m */,
 			);
 			name = "View Controllers & Views";
 			sourceTree = "<group>";
@@ -325,17 +310,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A3B4A6117CB8C2900FBCB8E /* PHCardioRecord.m in Sources */,
-				2A333C6717CB70360083B3E9 /* PHCardioViewController.m in Sources */,
-				2A333C6A17CB704A0083B3E9 /* PHHistoryViewController.m in Sources */,
 				2AE6E1F917CB654900AC21BB /* PHAppDelegate.m in Sources */,
 				2A3B4A5917CB7DAA00FBCB8E /* PHGraphView.m in Sources */,
-				2A333C6D17CB705D0083B3E9 /* PHStatisticsViewController.m in Sources */,
+				2A2CDAB217D39AD800EA2095 /* PHProfileInputViewController.m in Sources */,
 				2A3B4A5317CB7D2A00FBCB8E /* PHCommunicator.m in Sources */,
 				2AE6E1FC17CB654900AC21BB /* PocketHearty.xcdatamodeld in Sources */,
 				2A3B4A5D17CB805600FBCB8E /* PHLogger.m in Sources */,
 				2A3B4A4D17CB7D0300FBCB8E /* PHAnalyzer.m in Sources */,
 				2AE6E1F517CB654900AC21BB /* main.m in Sources */,
-				2A333C7017CB706C0083B3E9 /* PHProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
