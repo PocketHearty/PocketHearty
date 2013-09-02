@@ -16,19 +16,35 @@
                     </tabBar>
                     <connections>
                         <segue destination="9dF-la-zEY" kind="relationship" relationship="viewControllers" id="sIb-6N-XJd"/>
-                        <segue destination="tpc-BY-54g" kind="relationship" relationship="viewControllers" id="uk2-Kd-0bm"/>
-                        <segue destination="xj3-rT-sGw" kind="relationship" relationship="viewControllers" id="6TO-21-m9J"/>
-                        <segue destination="4W5-Mw-sk6" kind="relationship" relationship="viewControllers" id="loE-XV-5HJ"/>
+                        <segue destination="rWu-W3-F5C" kind="relationship" relationship="viewControllers" id="iSu-QS-fHY"/>
+                        <segue destination="xWu-iT-EWk" kind="relationship" relationship="viewControllers" id="6D0-bw-4X8"/>
+                        <segue destination="ziE-wT-03Y" kind="relationship" relationship="viewControllers" id="hge-9v-lEL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mnX-Su-nhQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="56" y="19"/>
         </scene>
-        <!--Cardio View Controller - Cardio View Controller-->
+        <!--Navigation Controller - History Navigation-->
+        <scene sceneID="aYN-0O-ocI">
+            <objects>
+                <navigationController title="History Navigation" definesPresentationContext="YES" id="rWu-W3-F5C" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="历史记录" id="4jX-Xo-ahb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VbL-kX-kEl">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tpc-BY-54g" kind="relationship" relationship="rootViewController" id="maV-NO-xgt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Kk-Kl-LIT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="793" y="-300"/>
+        </scene>
+        <!--Cardio View Controller - Waiting to Get Ready-->
         <scene sceneID="5Pm-bT-NFG">
             <objects>
-                <navigationController title="Cardio View Controller" definesPresentationContext="YES" navigationBarHidden="YES" id="9dF-la-zEY" customClass="PHCardioViewController" sceneMemberID="viewController">
+                <navigationController title="Waiting to Get Ready" definesPresentationContext="YES" navigationBarHidden="YES" id="9dF-la-zEY" customClass="PHCardioViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="测量" id="Cut-Y8-tqq"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gTq-YZ-ffT">
@@ -43,10 +59,10 @@
             </objects>
             <point key="canvasLocation" x="793" y="-1072"/>
         </scene>
-        <!--View Controller - Wait until finish-->
+        <!--View Controller - Testing-->
         <scene sceneID="S62-kQ-f4e">
             <objects>
-                <viewController title="Wait until finish" id="hze-G7-qee" sceneMemberID="viewController">
+                <viewController title="Testing" id="hze-G7-qee" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BAc-QX-aNH"/>
                         <viewControllerLayoutGuide type="bottom" id="Xcy-JA-wGZ"/>
@@ -79,39 +95,43 @@
             </objects>
             <point key="canvasLocation" x="1402" y="-1072"/>
         </scene>
-        <!--Table View Controller - 历史记录-->
+        <!--History Table View Controller - History Table-->
         <scene sceneID="f2G-ib-ePF">
             <objects>
-                <tableViewController id="tpc-BY-54g" sceneMemberID="viewController">
+                <tableViewController title="History Table" id="tpc-BY-54g" customClass="PHHistoryTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="2VR-Yn-KgU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="hW7-tf-PPV">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="hW7-tf-PPV">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hW7-tf-PPV" id="Xq9-OP-qKI">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="253" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="s6Y-vi-XiP" kind="push" identifier="showCardioResult" id="ntL-gR-fqf"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tpc-BY-54g" id="aF9-X3-rKi"/>
+                            <outlet property="delegate" destination="tpc-BY-54g" id="KXE-6H-9bz"/>
+                        </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="历史记录" id="Q5a-Gg-Lcb"/>
                     <navigationItem key="navigationItem" title="历史记录" id="tvy-7r-YqF"/>
-                    <connections>
-                        <segue destination="IgC-Ch-gD9" kind="push" id="Its-hl-60N"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jPD-vB-YjU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="793" y="-295"/>
+            <point key="canvasLocation" x="1402" y="-300"/>
         </scene>
-        <!--View Controller - Title-->
+        <!--Cardio Result View Controller - Cardiograph Result-->
         <scene sceneID="M28-LW-rze">
             <objects>
-                <viewController id="s6Y-vi-XiP" sceneMemberID="viewController">
+                <viewController title="Cardiograph Result" id="s6Y-vi-XiP" customClass="PHCardioResultViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Flj-8t-xC4"/>
                         <viewControllerLayoutGuide type="bottom" id="c4K-QC-wzz"/>
@@ -125,7 +145,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9:30 am｜2013.8.27" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3M-13-9yM">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12:34 pm｜Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3M-13-9yM">
                                 <rect key="frame" x="19" y="84" width="302" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -191,12 +211,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="eX0-g0-ggf">
-                        <barButtonItem key="leftBarButtonItem" title="保存" id="vqv-tO-AsH"/>
-                        <barButtonItem key="rightBarButtonItem" title="分享" id="RgF-gd-If8"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="zFd-hf-GeA"/>
+                    <navigationItem key="navigationItem" title="12:34" id="eX0-g0-ggf">
+                        <barButtonItem key="leftBarButtonItem" title="关闭" id="vqv-tO-AsH">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="s6Y-vi-XiP" id="qTu-Lw-hFr"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="分享" id="RgF-gd-If8">
+                            <connections>
+                                <action selector="shareButtonPressed:" destination="s6Y-vi-XiP" id="Ih3-JE-MKU"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="cx9-IH-XWc" kind="push" id="CIn-UF-I8e"/>
                         <segue destination="bbX-9F-SjI" kind="push" id="V5j-6J-C0d"/>
                     </connections>
                 </viewController>
@@ -204,52 +232,11 @@
             </objects>
             <point key="canvasLocation" x="2669" y="-700"/>
         </scene>
-        <!--View Controller - save-->
-        <scene sceneID="m5e-JO-BD8">
-            <objects>
-                <viewController title="save" id="cx9-IH-XWc" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ejN-3l-K5N"/>
-                        <viewControllerLayoutGuide type="bottom" id="C8h-gB-9e7"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OoT-oY-ttP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5tB-6k-qy1">
-                                <rect key="frame" x="0.0" y="397" width="320" height="171"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jd0-TZ-6Aw">
-                                        <rect key="frame" x="132" y="34" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzu-N2-kT1">
-                                        <rect key="frame" x="132" y="114" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="IZB-nK-lXn"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2xg-dp-uL4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3302" y="-271"/>
-        </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - History Navigation-->
         <scene sceneID="aw3-2p-WLN">
             <objects>
-                <navigationController definesPresentationContext="YES" id="IgC-Ch-gD9" sceneMemberID="viewController">
+                <navigationController title="History Navigation" definesPresentationContext="YES" id="IgC-Ch-gD9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="5lb-16-8ek"/>
                     <navigationItem key="navigationItem" id="HFr-vG-Lhw"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nfu-cg-44E">
                         <autoresizingMask key="autoresizingMask"/>
@@ -260,12 +247,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CPb-ZW-xv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2097" y="-700"/>
+            <point key="canvasLocation" x="2011" y="-1072"/>
         </scene>
-        <!--View Controller - share-->
+        <!--View Controller - Save-->
         <scene sceneID="U1A-Uf-7bf">
             <objects>
-                <viewController title="share" id="bbX-9F-SjI" sceneMemberID="viewController">
+                <viewController title="Save" id="bbX-9F-SjI" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RVI-cK-syD"/>
                         <viewControllerLayoutGuide type="bottom" id="TDm-Xi-oA9"/>
@@ -279,37 +266,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="93t-6h-FBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3302" y="-1072"/>
+            <point key="canvasLocation" x="3254" y="-700"/>
         </scene>
-        <!--Statistics View Controller - 统计-->
-        <scene sceneID="0Fl-wH-k7x">
+        <!--Navigation Controller - 个人信息-->
+        <scene sceneID="Fqe-gW-b9e">
             <objects>
-                <navigationController definesPresentationContext="YES" id="xj3-rT-sGw" customClass="PHStatisticsViewController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="统计" id="7pj-Iv-O5y"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9dE-hr-0DW">
+                <navigationController definesPresentationContext="YES" id="ziE-wT-03Y" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="个人信息" id="E0m-9o-HMb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p4u-CZ-0wd">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="xWu-iT-EWk" kind="relationship" relationship="rootViewController" id="pnw-HN-6r9"/>
+                        <segue destination="Pz0-tH-HVz" kind="relationship" relationship="rootViewController" id="q2b-3C-Max"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nTk-Uf-LOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="793" y="481"/>
-        </scene>
-        <!--Profile View Controller - 个人信息-->
-        <scene sceneID="CLO-Gd-Shy">
-            <objects>
-                <navigationController definesPresentationContext="YES" id="4W5-Mw-sk6" customClass="PHProfileViewController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="个人信息" id="miP-Vn-poQ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RBT-mQ-fAK">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Pz0-tH-HVz" kind="relationship" relationship="rootViewController" id="ygC-W8-OEb"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qGA-Nd-oIT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UES-Jq-WoS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="793" y="1204"/>
         </scene>
@@ -376,9 +347,14 @@
                                     <segment title="女"/>
                                 </segments>
                             </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="idPhotoDemo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Rzg-23-RXm">
+                                <rect key="frame" x="119" y="70" width="83" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Nj5-ZH-yhA"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="个人信息" id="HH8-TL-CgA">
                         <barButtonItem key="rightBarButtonItem" title="保存" id="UP2-1z-pzf">
@@ -401,10 +377,10 @@
             </objects>
             <point key="canvasLocation" x="1402" y="1204"/>
         </scene>
-        <!--View Controller - 数据-->
+        <!--View Controller - Statistics-->
         <scene sceneID="bG0-ZQ-KAh">
             <objects>
-                <viewController id="xWu-iT-EWk" sceneMemberID="viewController">
+                <viewController title="Statistics" id="xWu-iT-EWk" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nmX-Vo-nVE"/>
                         <viewControllerLayoutGuide type="bottom" id="RtN-87-noI"/>
@@ -428,19 +404,23 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="统计" id="AfV-M8-PFA"/>
                     <navigationItem key="navigationItem" title="数据" id="MlZ-BN-e6J"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qom-Go-7l1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1402" y="481"/>
+            <point key="canvasLocation" x="793" y="461"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="idPhotoDemo.jpg" width="638" height="560"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="dGR-fe-mZi"/>
+        <segue reference="ntL-gR-fqf"/>
     </inferredMetricsTieBreakers>
 </document>
