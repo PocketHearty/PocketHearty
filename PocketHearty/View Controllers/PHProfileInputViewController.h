@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "PHLogger.h"
+
 @interface PHProfileInputViewController : UIViewController <UITextFieldDelegate>
 
 @property (nonatomic, strong) IBOutlet UITextField *nameField;
@@ -18,9 +20,7 @@
 @property (nonatomic, strong) IBOutlet UILabel *ageLabel;
 @property (nonatomic, strong) IBOutlet UILabel *genderLabel;
 
-- (IBAction)didTapBackgroundArea:(id)sender;
-- (IBAction)genderControlTapped:(id)sender;
-
-- (void)textFieldDidBeginEditing:(UITextField *)textField;
+- (IBAction)backgroundAreaTapped:(id)sender;
+- (IBAction)saveButtonPressed:(id)sender;
 
 @end

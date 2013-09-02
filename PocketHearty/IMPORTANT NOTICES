@@ -23,6 +23,9 @@ Delegate 入门教程：
 http://mobile.51cto.com/iphone-278695.htm
 http://www.cnblogs.com/likwo/archive/2011/03/02/1968785.html
 
+9月2日更新：
+近期内，本 App 内的所有 UI 相关设计仅支持 iPhone 5 长屏幕即可
+
 *********************
 
 
@@ -31,8 +34,6 @@ http://www.cnblogs.com/likwo/archive/2011/03/02/1968785.html
 // 请在自己的名字后写下希望其他成员未来一段时间不要修改的文件名称或范围，并注意及时更新
 
 冯 子力：
-Services 文件夹中所有代码
-Data Structures 文件夹中所有代码
 
 马 一然：
 
