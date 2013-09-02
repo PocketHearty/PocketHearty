@@ -13,6 +13,10 @@
 
 @interface PHCardioResultViewController : UIViewController <UIActionSheetDelegate, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate>
 
+@property (nonatomic, strong) IBOutlet UILabel *timeLabel;
+
+@property (nonatomic) BOOL timeLabelShouldHide;
+
 - (IBAction)shareButtonPressed:(id)sender;
 - (IBAction)saveButtonPressed:(id)sender;
 

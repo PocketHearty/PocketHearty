@@ -14,6 +14,9 @@
 
 @implementation PHCardioResultViewController
 
+@synthesize timeLabelShouldHide;
+@synthesize timeLabel;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -26,7 +29,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view.
+    if (timeLabelShouldHide) {
+        self.timeLabel.hidden = YES;
+    }
 }
 
 - (void)didReceiveMemoryWarning

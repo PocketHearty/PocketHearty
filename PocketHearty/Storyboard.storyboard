@@ -15,7 +15,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9dF-la-zEY" kind="relationship" relationship="viewControllers" id="sIb-6N-XJd"/>
+                        <segue destination="X25-Bi-bu8" kind="relationship" relationship="viewControllers" id="3lZ-52-iib"/>
                         <segue destination="rWu-W3-F5C" kind="relationship" relationship="viewControllers" id="iSu-QS-fHY"/>
                         <segue destination="xWu-iT-EWk" kind="relationship" relationship="viewControllers" id="6D0-bw-4X8"/>
                         <segue destination="ziE-wT-03Y" kind="relationship" relationship="viewControllers" id="hge-9v-lEL"/>
@@ -41,21 +41,39 @@
             </objects>
             <point key="canvasLocation" x="793" y="-300"/>
         </scene>
-        <!--Cardio View Controller - Waiting to Get Ready-->
-        <scene sceneID="5Pm-bT-NFG">
+        <!--View Controller - Test Waiting-->
+        <scene sceneID="9b8-9O-GQ4">
             <objects>
-                <navigationController title="Waiting to Get Ready" definesPresentationContext="YES" navigationBarHidden="YES" id="9dF-la-zEY" customClass="PHCardioViewController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="测量" id="Cut-Y8-tqq"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gTq-YZ-ffT">
-                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
+                <viewController title="Test Waiting" id="X25-Bi-bu8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FZK-nE-P9x"/>
+                        <viewControllerLayoutGuide type="bottom" id="jeK-v3-XIt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f7i-EG-7tc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Wq-nB-BCC">
+                                <rect key="frame" x="67" y="101" width="186" height="185"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="请将两根手指置于电极片上，以开始测量。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="264" translatesAutoresizingMaskIntoConstraints="NO" id="f42-zU-BAZ">
+                                <rect key="frame" x="28" y="371" width="264" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="测量" id="OxP-Lt-kYL"/>
                     <connections>
-                        <segue destination="hze-G7-qee" kind="relationship" relationship="rootViewController" id="FGo-0y-1jT"/>
+                        <segue destination="hze-G7-qee" kind="push" id="LRv-Jn-J3r"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Nf-aF-8gi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zRa-GF-NT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="793" y="-1072"/>
         </scene>
@@ -71,24 +89,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t7c-tT-nBT">
-                                <rect key="frame" x="9" y="122" width="302" height="311"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woD-qm-KYW">
-                                <rect key="frame" x="139" y="458" width="42" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="请勿移动手指直到测试结束。整个过程大约需要 15 秒钟。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="235" translatesAutoresizingMaskIntoConstraints="NO" id="woD-qm-KYW">
+                                <rect key="frame" x="49" y="376" width="235" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="13 s" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbn-9Y-cmB">
+                                <rect key="frame" x="150" y="33" width="33" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <glkView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" enableSetNeedsDisplay="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJD-Dd-yu4">
+                                <rect key="frame" x="20" y="77" width="280" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </glkView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="viG-T9-TFQ"/>
                     <connections>
-                        <segue destination="IgC-Ch-gD9" kind="custom" id="dGR-fe-mZi"/>
+                        <segue destination="s6Y-vi-XiP" kind="push" id="4yN-E1-JhY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lHg-jz-XX3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -112,7 +137,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="s6Y-vi-XiP" kind="push" identifier="showCardioResult" id="ntL-gR-fqf"/>
+                                    <segue destination="s6Y-vi-XiP" kind="push" identifier="showCardioResult" id="GpQ-4L-T2o"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -225,39 +250,23 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="timeLabel" destination="b3M-13-9yM" id="EFT-Sn-MSh"/>
                         <segue destination="bbX-9F-SjI" kind="push" id="V5j-6J-C0d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NXU-Wf-pUz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2669" y="-700"/>
+            <point key="canvasLocation" x="2069" y="-700"/>
         </scene>
-        <!--Navigation Controller - History Navigation-->
-        <scene sceneID="aw3-2p-WLN">
-            <objects>
-                <navigationController title="History Navigation" definesPresentationContext="YES" id="IgC-Ch-gD9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="5lb-16-8ek"/>
-                    <navigationItem key="navigationItem" id="HFr-vG-Lhw"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nfu-cg-44E">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="s6Y-vi-XiP" kind="relationship" relationship="rootViewController" id="QXM-Zq-at8"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CPb-ZW-xv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2011" y="-1072"/>
-        </scene>
-        <!--View Controller - Save-->
+        <!--View Controller - Diagnosis-->
         <scene sceneID="U1A-Uf-7bf">
             <objects>
-                <viewController title="Save" id="bbX-9F-SjI" sceneMemberID="viewController">
+                <viewController title="Diagnosis" id="bbX-9F-SjI" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RVI-cK-syD"/>
                         <viewControllerLayoutGuide type="bottom" id="TDm-Xi-oA9"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aiL-co-njG">
+                    <view key="view" alpha="0.29999999999999999" contentMode="scaleToFill" id="aiL-co-njG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -266,12 +275,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="93t-6h-FBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3254" y="-700"/>
+            <point key="canvasLocation" x="2654" y="-700"/>
         </scene>
-        <!--Navigation Controller - 个人信息-->
+        <!--Navigation Controller - Profile Navigation-->
         <scene sceneID="Fqe-gW-b9e">
             <objects>
-                <navigationController definesPresentationContext="YES" id="ziE-wT-03Y" sceneMemberID="viewController">
+                <navigationController title="Profile Navigation" definesPresentationContext="YES" id="ziE-wT-03Y" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="个人信息" id="E0m-9o-HMb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="p4u-CZ-0wd">
                         <autoresizingMask key="autoresizingMask"/>
@@ -284,10 +293,10 @@
             </objects>
             <point key="canvasLocation" x="793" y="1204"/>
         </scene>
-        <!--Profile Input View Controller - 个人信息-->
+        <!--Profile Input View Controller - Profile Input-->
         <scene sceneID="CQF-2r-lbO">
             <objects>
-                <viewController id="Pz0-tH-HVz" customClass="PHProfileInputViewController" sceneMemberID="viewController">
+                <viewController title="Profile Input" id="Pz0-tH-HVz" customClass="PHProfileInputViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AZF-zP-LzQ"/>
                         <viewControllerLayoutGuide type="bottom" id="ct9-vD-S1j"/>
@@ -424,6 +433,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ntL-gR-fqf"/>
+        <segue reference="4yN-E1-JhY"/>
     </inferredMetricsTieBreakers>
 </document>
