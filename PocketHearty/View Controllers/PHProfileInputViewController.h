@@ -21,6 +21,8 @@
 @property (nonatomic, strong) IBOutlet UILabel *genderLabel;
 
 - (IBAction)backgroundAreaTapped:(id)sender;
+- (IBAction)nameFieldEditingFinished:(id)sender;
+
 - (IBAction)saveButtonPressed:(id)sender;
 
 @end

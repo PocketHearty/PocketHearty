@@ -32,7 +32,7 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     
     // TEMP
-    items = [NSMutableArray arrayWithObject:@"开发者临时条目"];
+    items = [NSMutableArray arrayWithObject:@"12:34 | Today"];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

@@ -53,6 +53,11 @@
     [self.genderSegContrl resignFirstResponder];
 }
 
+- (IBAction)nameFieldEditingFinished:(id)sender
+{
+    [self.ageField becomeFirstResponder];
+}
+
 - (IBAction)saveButtonPressed:(id)sender
 {
     // TEMP

@@ -54,15 +54,34 @@
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    // TEMP
     if (buttonIndex == 0) {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"开发者临时消息" message:@"已按下通过邮件分享按钮" delegate:self cancelButtonTitle:@"关闭消息" otherButtonTitles:nil];
-        [alertView show];
+        MFMailComposeViewController *mailPicker = [[MFMailComposeViewController alloc] init];
+        mailPicker.mailComposeDelegate = self;
+        
+        [mailPicker setSubject:@"我的心电图"];
+        NSString *emailBody = @"以下是我的心电图结果：\n";
+        [mailPicker setMessageBody:emailBody isHTML:YES];
+        
+        [self presentViewController:mailPicker animated:YES completion:^{}];
     }
     if (buttonIndex == 1) {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"开发者临时消息" message:@"已按下通过短信分享按钮" delegate:self cancelButtonTitle:@"关闭消息" otherButtonTitles:nil];
-        [alertView show];
+        MFMessageComposeViewController *messagePicker = [[MFMessageComposeViewController alloc] init];
+        messagePicker.messageComposeDelegate = self;
+        
+        [messagePicker setBody:@"我的心电图结果："];
+        
+        [self presentViewController:messagePicker animated:YES completion:^{}];
     }
+}
+
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    [self dismissViewControllerAnimated:YES completion:^{}];
+}
+
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result
+{
+    [self dismissViewControllerAnimated:YES completion:^{}];
 }
 
 @end

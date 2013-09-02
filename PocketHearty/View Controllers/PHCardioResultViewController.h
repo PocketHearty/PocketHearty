@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 
 #import "PHLogger.h"
 
-@interface PHCardioResultViewController : UIViewController <UIActionSheetDelegate>
+@interface PHCardioResultViewController : UIViewController <UIActionSheetDelegate, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate>
 
 - (IBAction)shareButtonPressed:(id)sender;
 - (IBAction)saveButtonPressed:(id)sender;
