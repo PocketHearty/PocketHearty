@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+#import "AudioProcessor.h"
+
 @interface PHCommunicator : NSObject
+{
+    AudioProcessor *mProcessor;
+}
 
 @end

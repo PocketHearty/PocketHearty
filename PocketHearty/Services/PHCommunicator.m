@@ -10,4 +10,19 @@
 
 @implementation PHCommunicator
 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        mProcessor = [[AudioProcessor alloc] init];
+        [self initializeComunication];
+    }
+    return self;
+}
+
+- (void)initializeComunication
+{
+    
+}
+
 @end

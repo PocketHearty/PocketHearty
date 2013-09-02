@@ -18,6 +18,7 @@
 		2A929A9417D45E3400A258B8 /* PHHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A929A9317D45E3400A258B8 /* PHHistoryTableViewController.m */; };
 		2A929A9717D468F400A258B8 /* idPhotoDemo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A929A9617D468F400A258B8 /* idPhotoDemo.jpg */; };
 		2A929A9917D4743E00A258B8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A929A9817D4743E00A258B8 /* MessageUI.framework */; };
+		2A929A9C17D4B6AD00A258B8 /* AudioProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A929A9B17D4B6AD00A258B8 /* AudioProcessor.m */; };
 		2AE6E1E717CB654900AC21BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE6E1E617CB654900AC21BB /* Foundation.framework */; };
 		2AE6E1E917CB654900AC21BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE6E1E817CB654900AC21BB /* CoreGraphics.framework */; };
 		2AE6E1EB17CB654900AC21BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE6E1EA17CB654900AC21BB /* UIKit.framework */; };
@@ -66,6 +67,8 @@
 		2A929A9317D45E3400A258B8 /* PHHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHHistoryTableViewController.m; path = "View Controllers/PHHistoryTableViewController.m"; sourceTree = "<group>"; };
 		2A929A9617D468F400A258B8 /* idPhotoDemo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = idPhotoDemo.jpg; sourceTree = "<group>"; };
 		2A929A9817D4743E00A258B8 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		2A929A9A17D4B6AD00A258B8 /* AudioProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioProcessor.h; path = Services/AudioProcessor.h; sourceTree = "<group>"; };
+		2A929A9B17D4B6AD00A258B8 /* AudioProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioProcessor.m; path = Services/AudioProcessor.m; sourceTree = "<group>"; };
 		2AE6E1E317CB654900AC21BB /* PocketHearty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketHearty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE6E1E617CB654900AC21BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2AE6E1E817CB654900AC21BB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,6 +121,8 @@
 			children = (
 				2A3B4A4B17CB7D0300FBCB8E /* PHAnalyzer.h */,
 				2A3B4A4C17CB7D0300FBCB8E /* PHAnalyzer.m */,
+				2A929A9A17D4B6AD00A258B8 /* AudioProcessor.h */,
+				2A929A9B17D4B6AD00A258B8 /* AudioProcessor.m */,
 				2A3B4A5117CB7D2A00FBCB8E /* PHCommunicator.h */,
 				2A3B4A5217CB7D2A00FBCB8E /* PHCommunicator.m */,
 				2A3B4A5B17CB805600FBCB8E /* PHLogger.h */,
@@ -344,6 +349,7 @@
 				2A3B4A5317CB7D2A00FBCB8E /* PHCommunicator.m in Sources */,
 				2AE6E1FC17CB654900AC21BB /* PocketHearty.xcdatamodeld in Sources */,
 				2A3B4A5D17CB805600FBCB8E /* PHLogger.m in Sources */,
+				2A929A9C17D4B6AD00A258B8 /* AudioProcessor.m in Sources */,
 				2A3B4A4D17CB7D0300FBCB8E /* PHAnalyzer.m in Sources */,
 				2AE6E1F517CB654900AC21BB /* main.m in Sources */,
 			);
