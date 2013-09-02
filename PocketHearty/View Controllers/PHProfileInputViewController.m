@@ -75,7 +75,7 @@
     
     // Animation
     CGRect newFrame = CGRectMake(self.view.frame.origin.x,
-                          - [[UIApplication sharedApplication] delegate].window.frame.size.height + keyboardBounds.origin.y + 180,
+                          - [[UIApplication sharedApplication] delegate].window.frame.size.height + keyboardBounds.origin.y + 110,
                                  self.view.frame.size.width,
                                  self.view.frame.size.height);
     self.view.frame = newFrame;
