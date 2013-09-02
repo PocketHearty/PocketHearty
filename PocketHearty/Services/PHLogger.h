@@ -11,9 +11,6 @@
 #import "PHCardioRecord.h"
 
 @interface PHLogger : NSObject
-{
-    PHCardioRecord *mRecord;
-}
 
 @property (retain, nonatomic) PHCardioRecord *record;
 

@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface PHCardioRecord : NSObject
+{
+    NSMutableArray *mDataList;
+}
 
 @end
