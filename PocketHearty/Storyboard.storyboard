@@ -360,7 +360,7 @@
                                 </segments>
                             </segmentedControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="idPhotoDemo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Rzg-23-RXm">
-                                <rect key="frame" x="119" y="70" width="83" height="83"/>
+                                <rect key="frame" x="140" y="83" width="83" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
