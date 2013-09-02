@@ -12,4 +12,9 @@
 
 @synthesize record;
 
+- (void)save
+{
+    
+}
+
 @end

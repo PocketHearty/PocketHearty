@@ -8,9 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#import "PHAppDelegate.h"
 #import "PHCardioRecord.h"
 
 @interface PHLogger : NSObject
+
+- (void)save;
 
 @property (retain, nonatomic) PHCardioRecord *record;
 
